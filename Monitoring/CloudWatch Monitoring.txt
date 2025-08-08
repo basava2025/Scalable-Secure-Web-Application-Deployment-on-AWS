@@ -1,0 +1,9 @@
+# CloudWatch Monitoring Setup
+
+1. Install CloudWatch Agent on EC2 using SSM or manually.
+2. Configure agent to monitor:
+   - CPUUtilization
+   - MemoryUsedPercent
+   - DiskUsedPercent
+3. Alarm: CPU > 70% for 5 mins → Trigger Auto Scaling
+4. Alarm: Memory > 80% → Notify via SNS
